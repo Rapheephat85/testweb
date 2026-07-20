@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout</title> 
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: black;
+            background-color: greenyellow;
+        }nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            padding: 20px;
+            background-color: yellow;
+        }
+        article{
+            text-align: left;
+            float: left;
+            width: 70%;
+            height: 300px;
+            padding: 20px;
+            background-color: red;
+        }
+        nav ul{
+            list-style-type:decimal-leading-zero;
+             padding: 0;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+            background-color: pink;
+        }
+       @media (max-width: 600px) {
+            nav, article {
+             width: 100%;
+            height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <section>
+        <nav> 
+            <ul>
+                <li><a href="https://www.kmutnb.ac.th/home">KMUTNB</a></li>
+                <li><a href="https://fitm.kmutnb.ac.th/">FITM</a></li>
+                <li><a href="https://www.facebook.com/Rapeephat8548">FACEBOOK</a></li>
+                <li><a href="file:///d%3A/6906022511063/testweb/index.html">ไป Index</a></li>
+            </ul>
+            
+         </nav>
+        <article>
+            <img src="image/22222.jpg" alt="Girl in a jacket"  height="200">
+            <h5>6906022511063</h5>
+            <h5>นายระพีพัฒน์ หาญวงษ์</h5>
+        </article>
+        <br>
+    </section>
+    <footer>FOOTER</footer>
+</body>
+</html>
