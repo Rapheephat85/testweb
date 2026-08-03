@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>student</title> 
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: black;
+            background-color: greenyellow;
+        }nav{
+            float: left;
+            width: auto;
+            height: auto;
+            padding: 20px;
+            background-color: yellow;
+        }
+        article{
+            text-align: left;
+            float: left;
+            width: auto;
+            height: auto;
+            padding: 20px;
+            background-color: rgb(25, 239, 132);
+        }
+        nav ul{
+            list-style-type:decimal-leading-zero;
+             padding: 0;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        footer{
+            text-align: center;
+            padding: auto;
+            background-color: pink;
+        }
+       @media (max-width: 600px) {
+            nav, article {
+             width: 100%;
+            height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <section>
+        <nav> 
+            <ul>
+                <li><a href="layout.html">layout</a></li>
+                <li><a href="inputfrom.html">input</a></li>
+                <li><a href="https://www.facebook.com/Rapeephat8548">FACEBOOK</a></li>
+                <li><a href="file:///d%3A/6906022511063/testweb/index.html">ไป Index</a></li>
+            </ul>
+            
+         </nav>
+       <article>
+            <h1>สมัครเรียน นักศึกษาใหม่</h1>
+            <form action="#">
+                
+                
+                
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" required name="username"><br>
+                <label for="fname">password:</label><br>
+                <input type="password" id="fname" required name="fname"><br>
+                <label for="lname">Email:</label><br>
+                <input type="email" id="" required name=""><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+
+
+                <!-- RADIO -->
+                <input type="radio" id="html" name="Graduated" value="ม.6">
+                <label for="html">ม.6</label><br>
+                <input type="radio" id="css" name="Graduated" value="ปวช">
+                <label for="css">ปวช</label><br>
+                <input type="radio" id="javascript" name="Graduated" value="ปวส">
+                <label for="javascript">ปวส</label>
+                <input type="radio" id="javascript" name="Graduated" value="อนุปริญญา">
+                <label for="javascript">อนุปริญญา</label>
+                
+                <!-- CHECK BOX -->
+                
+                <input type="checkbox" id="vehicle1" name="major1" value="Bike">
+                <label for="IT"> IT</label><br>
+                <input type="checkbox" id="vehicle2" name="major2" value="Car">
+                <label for="ITI"> ITI</label><br>
+                <input type="checkbox" id="vehicle3" name="major3" value="Boat">
+                <label for="ITT"> ITT</label>
+                <input type="checkbox" id="vehicle4" name="major4" value="Boat">
+                <label for="INE"> INE</label>
+                <input type="checkbox" id="vehicle5" name="major5" value="Boat">
+                <label for="INET"> INET</label>
+                
+                
+                <!-- Input Type Date -->
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+               
+
+                <!-- input typs file -->
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile">
+
+
+                <!-- input number -->
+                <label for="height">ส่วนสูง (ซม.): </label>
+                <input type="number" id="height" min="20" max="200">
+                <label for="weight">น้ำหนัก (กก.): </label>
+                <input type="number" id="weight" min="20" max="200">
+
+
+                <!-- Input Type Range -->
+                  <label for="จะจบปีไหน">จะจบปีไหน :</label>
+                <input type="range" id="vol" name="vol" min="0" max="50">
+
+                <!-- Phone number -->
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+
+                <!-- Type Url -->
+                <label for="url">Enter your website URL:</label>
+                <input type="url" id="url" name="url">
+
+                </form>
+       </article>
+    <footer>FOOTER</footer>
+</body>
+</html>
