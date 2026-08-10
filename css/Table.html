@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TABLE</title> 
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: black;
+            background-color: greenyellow;
+        }nav{
+            float: left;
+            width: 20%;
+            height: 300px;
+            padding: 20px;
+            background-color: yellow;
+        }
+        article{
+            text-align: left;
+            float: left;
+            width: 80%;
+            height: 300px;
+            padding: 20px;
+            background-color: rgb(99, 128, 243);
+        }
+        nav ul{
+            list-style-type:circle;
+             padding: 0;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+            padding: 30px;
+            background-color: pink;
+        }
+       @media (max-width: 600px) {
+            nav, article {
+             width: 100%;
+            height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <section>
+        <nav> 
+            <ul>
+                <li><a href="layout.html">layout</a></li>
+                <li><a href="inputfrom.html">inputfrom</a></li>
+                <li><a href="https://www.facebook.com/Rapeephat8548">FACEBOOK</a></li>
+                <li><a href="file:///d%3A/6906022511063/testweb/index.html">ไป Index</a></li>
+            </ul>
+            
+         </nav>
+       <article>
+            <h1>TABEL.html</h1>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                </tr>
+                <tr>
+                    <td colspan="2"> 1, 2</td>
+                    <!-- <td> 2</td> -->
+                    <td> 3</td>
+                    <td> 4</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"> 5 <br>9</td>
+                    <td> 6</td>
+                    <td colspan="2", rowspan="2"> 7, 8 <br>11 ,12 </td>
+                    <!-- <td> 8</td> -->
+                </tr>
+                <tr>
+                    <!-- <td> 9</td> -->
+                    <td> 10</td>
+                    <!-- <td> 11</td> -->
+                    <!-- <td> 12</td> -->
+                </tr>
+            </table>
+            <form action="#">
+                </form>
+       </article>
+    <footer>FOOTER</footer>
+</body>
+</html>

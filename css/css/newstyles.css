@@ -1,0 +1,25 @@
+body{
+   background-color: #e92020;
+}
+/*class selectors*/
+.black{
+    color:#0a0009;
+}
+.blue{ 
+    color: aqua;
+}
+.font1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.size1{
+    font-size: 100px;
+    font-weight: 600px;
+    font-style: oblique;
+}
+
+/* ID SELECTOR */
+#green {
+    color: greenyellow;
+    font-size: 100px;
+    font-style: oblique;
+}
